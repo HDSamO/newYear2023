@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    background-image: url("https://i.pinimg.com/originals/e1/0e/a8/e10ea84d99046ff773646e2b91a5d670.jpg");
+    color: #fff;
+    background-size: auto;
+    text-align: center;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;   
+    opacity: 0.8;
+}
+
+.text {
+    margin-top: 30vh;
+    z-index: 0;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff2cc, 0 0 30px #fdbe02, 0 0 40px #fcba03  , 0 0 50px #fc6b03, 0 0 60px #ff4e03, 0 0 70px #ff3e03;
+    }
+    to {
+      text-shadow: 0 0 20px #fdbe02, 0 0 30px  #fc6b03, 0 0 40px #ff4e03, 0 0 50px #ff4040, 0 0 60px #FF0000, 0 0 70px #b53737, 0 0 80px #9e1a1a;
+    }
+  }
